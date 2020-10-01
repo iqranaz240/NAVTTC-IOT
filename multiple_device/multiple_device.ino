@@ -6,6 +6,7 @@ const int LED_ldr = 6;
 const int LDR = 7;
 int temp;
 int ldr;
+int a;
 void setup() {
   // put your setup code here, to run once:
 pinMode(Sm_Dt, INPUT);
@@ -19,10 +20,13 @@ Serial.begin(9600);
 
 void loop() {
   // put your main code here, to run repeatedly:
-digitalRead(Sm_Dt);
-temp = analogRead(Temp);
-Serial.println(temp);
+a = digitalRead(Sm_Dt);
+//analogRead(Temp);
+//print("Temperature Value: ");
+//Serial.println(analogRead(Temp));
+Serial.println(a);
 ldr = analogRead(LDR);
+//print("LDR Value: ");
 Serial.println(ldr);
 if (Sm_Dt == HIGH)
 {
@@ -32,7 +36,7 @@ else
 {
   digitalWrite(alarm, LOW);
 }
-if (ldr < 400)
+if (ldr < 300)
 {
   digitalWrite(LED_ldr, HIGH);
 }

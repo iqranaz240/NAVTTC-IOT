@@ -36,7 +36,7 @@ else
 {
   digitalWrite(alarm, LOW);
 }
-if (ldr < 300)
+/*if (ldr < 300)
 {
   digitalWrite(LED_ldr, HIGH);
 }
@@ -51,5 +51,5 @@ if (temp > 10)
 else 
 {
   digitalWrite(LED_temp, LOW);
-}
+}*/
 }

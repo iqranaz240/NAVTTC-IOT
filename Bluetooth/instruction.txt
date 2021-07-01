@@ -1,0 +1,27 @@
+Let’s Start Building
+
+The circuit is so simple and small, there are only a few connections to be made
+
+Arduino Pins           Bluetooth Pins
+
+RX (Pin 0)     ———->      TX
+
+TX (Pin 1)      ———->      RX
+
+5V                ———->      VCC
+
+GND             ———->      GND
+
+Connect a LED negative to GND of Arduino and positive to pin 13 with a resistance valued between 220Ω – 1KΩ. And you're done with the circuit
+
+Download the Application form here or here
+Pair your device with HC 05/06 Bluetooth module1) Turn ON HC 05/06 Bluetooth module2) Scan for available device3) Pair to HC 05/06 by entering default password 1234 OR 0000
+Install  LED application on your android device
+Open the Application
+Press paired devices
+Select your Bluetooth module from the List (HC 05)
+After connecting successfully
+Press ON button to turn ON LED and OFF button to turn OFF the LED
+Disconnect button to disconnect from Bluetooth module
+
+This is just a basic tutorial on interfacing Bluetooth module with Arduino This project can be improved to a higher level like Home automation using a smartphone, Smartphone controlled robot, and much more.
